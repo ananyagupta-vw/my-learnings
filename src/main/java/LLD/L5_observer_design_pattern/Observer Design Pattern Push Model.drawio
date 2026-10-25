@@ -1,0 +1,93 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0">
+  <diagram name="Page-1" id="6xX1S-KGaQvr7O9W3148">
+    <mxGraphModel dx="1415" dy="767" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="1700" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="4tM1yqM6xsbmkZPmVEPT-1" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Push Model&lt;/h1&gt;&lt;div&gt;The observer pushes the updates to all the observers whenever there is a change in the state of the observable&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="180" x="80" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4tM1yqM6xsbmkZPmVEPT-6" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;gradientColor=none;swimlaneFillColor=default;" value="Observabe &amp;lt;&amp;lt;interface&amp;gt;&amp;gt;" vertex="1">
+          <mxGeometry height="94" width="220" x="337.5" y="240" as="geometry">
+            <mxRectangle height="30" width="170" x="740" y="250" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4tM1yqM6xsbmkZPmVEPT-8" parent="4tM1yqM6xsbmkZPmVEPT-6" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;labelPerimeter=1;" value="" vertex="1">
+          <mxGeometry height="8" width="220" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="4tM1yqM6xsbmkZPmVEPT-9" parent="4tM1yqM6xsbmkZPmVEPT-6" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ addObserver(Observer): void&lt;div&gt;+ removeObserver(Observer): void&amp;nbsp;&lt;/div&gt;&lt;div&gt;+ notifyObserver(): void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="220" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="4tM1yqM6xsbmkZPmVEPT-10" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;swimlaneFillColor=default;" value="Observer &amp;lt;&amp;lt;interface&amp;gt;&amp;gt;" vertex="1">
+          <mxGeometry height="60" width="200" x="775" y="257" as="geometry" />
+        </mxCell>
+        <mxCell id="4tM1yqM6xsbmkZPmVEPT-12" parent="4tM1yqM6xsbmkZPmVEPT-10" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;labelPerimeter=1;" value="" vertex="1">
+          <mxGeometry height="8" width="200" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="4tM1yqM6xsbmkZPmVEPT-13" parent="4tM1yqM6xsbmkZPmVEPT-10" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ update(ObservableData) : void" vertex="1">
+          <mxGeometry height="26" width="200" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="4tM1yqM6xsbmkZPmVEPT-14" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=default;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;swimlaneFillColor=default;" value="&lt;b&gt;ObservableData&lt;/b&gt;" vertex="1">
+          <mxGeometry height="104" width="140" x="110" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="4tM1yqM6xsbmkZPmVEPT-15" parent="4tM1yqM6xsbmkZPmVEPT-14" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ data1: int" vertex="1">
+          <mxGeometry height="26" width="140" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="4tM1yqM6xsbmkZPmVEPT-16" parent="4tM1yqM6xsbmkZPmVEPT-14" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ data2: String" vertex="1">
+          <mxGeometry height="26" width="140" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="4tM1yqM6xsbmkZPmVEPT-17" parent="4tM1yqM6xsbmkZPmVEPT-14" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ data3: int" vertex="1">
+          <mxGeometry height="26" width="140" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="4tM1yqM6xsbmkZPmVEPT-27" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;swimlaneFillColor=default;" value="ConcreteObservable &amp;lt;&amp;lt;class&amp;gt;&amp;gt;" vertex="1">
+          <mxGeometry height="160" width="265" x="315" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="4tM1yqM6xsbmkZPmVEPT-28" parent="4tM1yqM6xsbmkZPmVEPT-27" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ ObservableData data;&lt;div&gt;+ List&amp;lt;Observer&amp;gt; observers;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="41" width="265" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="4tM1yqM6xsbmkZPmVEPT-29" parent="4tM1yqM6xsbmkZPmVEPT-27" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;labelPerimeter=1;" value="" vertex="1">
+          <mxGeometry height="8" width="265" y="67" as="geometry" />
+        </mxCell>
+        <mxCell id="4tM1yqM6xsbmkZPmVEPT-30" parent="4tM1yqM6xsbmkZPmVEPT-27" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ addObserver(Observer ob): void&lt;div&gt;+ removeObserver(Observer ob) : void&lt;/div&gt;&lt;div&gt;+ notifyObserver(): void&lt;/div&gt;&lt;div&gt;+ setState(ObserverableData data) : void&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;{calls the notifyObserver()}&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="85" width="265" y="75" as="geometry" />
+        </mxCell>
+        <mxCell id="4tM1yqM6xsbmkZPmVEPT-31" edge="1" parent="1" style="endArrow=none;endFill=0;endSize=24;html=1;rounded=0;defaultLabelBackgroundColor=page;entryX=0;entryY=0.383;entryDx=0;entryDy=0;entryPerimeter=0;" target="4tM1yqM6xsbmkZPmVEPT-10" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="557.5" y="280" as="sourcePoint" />
+            <mxPoint x="717.5" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4tM1yqM6xsbmkZPmVEPT-32" edge="1" parent="1" source="4tM1yqM6xsbmkZPmVEPT-27" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;defaultLabelBackgroundColor=page;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="4tM1yqM6xsbmkZPmVEPT-6" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="470" y="400" as="sourcePoint" />
+            <mxPoint x="630" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4tM1yqM6xsbmkZPmVEPT-37" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;swimlaneFillColor=default;" value="ConcreteObserver &amp;lt;class&amp;gt;" vertex="1">
+          <mxGeometry height="94" width="170" x="790" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="4tM1yqM6xsbmkZPmVEPT-39" parent="4tM1yqM6xsbmkZPmVEPT-37" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;labelPerimeter=1;" value="" vertex="1">
+          <mxGeometry height="8" width="170" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="4tM1yqM6xsbmkZPmVEPT-40" parent="4tM1yqM6xsbmkZPmVEPT-37" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ update(ObservableDtaa): void" vertex="1">
+          <mxGeometry height="60" width="170" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="4tM1yqM6xsbmkZPmVEPT-41" edge="1" parent="1" source="4tM1yqM6xsbmkZPmVEPT-37" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;defaultLabelBackgroundColor=page;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="4tM1yqM6xsbmkZPmVEPT-10" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="470" y="400" as="sourcePoint" />
+            <mxPoint x="880" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4tM1yqM6xsbmkZPmVEPT-42" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="has-a" vertex="1">
+          <mxGeometry height="30" width="60" x="610" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="4tM1yqM6xsbmkZPmVEPT-43" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="is-a" vertex="1">
+          <mxGeometry height="30" width="60" x="430" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="4tM1yqM6xsbmkZPmVEPT-44" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="is-a" vertex="1">
+          <mxGeometry height="30" width="60" x="860" y="380" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
